@@ -13,98 +13,85 @@ public class partTwo {
 		System.out.println("what is your age");
 		int age = input.nextInt();
 		System.out.println("What your Birthday");
+		String birdthDate = "amountInBankAcc";
 		int birthDay = input.nextInt();
-		if (birthday==7) {
-			
-			System.out.println("you");
-		}
-		
-		System.out.println("What is your favorite Color: ");
-		
-		String jam = input.next();
-		 
-		if(jam.equalsIgnoreCase("red")) 
-		{
-			System.out.println("Hop on that waggon");
-			
-		}
-		
-		 else if(jam.equalsIgnoreCase("orange"))
-		 {
-			 
-			 System.out.println("Have some orange you look thirsty");
-		 }
-	
-			else if(jam.equalsIgnoreCase("Green")) {
-		
-		System.out.println("what you doing with you life , have some green");
-		}
-			else if (jam.equalsIgnoreCase("Blue")) {
-				System.out.println("you need to take a swim");
-			} else if (jam.equalsIgnoreCase("INDingo")) {
-				
-				System.out.println("what on earth is indino, man your lost");
-			} else if(jam.equalsIgnoreCase("violet")) {
-				System.out.println("violet is your color, finally, you got some sense");
-			}
-			else {
-				
-				System.out.println("Please say i need HELP");
-			}
-		{
-			
-			
-	System.out.println("How old are you, Dont tell me , you dont qualify!!!");
-		int age1 =input.nextInt();
-		 if(age1%2>=0) {
-			 
-		  
-			System.out.println("How many Siblings do you  have?");
-		 }
-		
-	      
-	
-		 else {
-			 
-			 
-			 System.out.println("Get out of here, Go back to work");
-		 }
-		 	
-		 
-		 int x =input.nextInt();
-		 if (x ==0) {
-			 
-			 System.out.println(" you are going to Mars");
-		 }
-		 else if (x==1) {
-			 
-			 System.out.println("Enjoy your stay in the Moon");
-		 }
-	
-		 else if (x==2) {
-			 
-			 System.out.println("welcome back to earth");
-		 }
-	
-		 else if (x==3) {
-			 
-			 System.out.println("Enjoy your stay Palm Beach Resort");
-		 }
-		 else if (x==4) {
-			 System.out.println("What are you doing here, go to Boca "
-			 		+ "boca");
-		 }else if (x==7) {
-			 
-			System.out.println("you are luckiest. Say thank you"
-					+ "to you Sibilings");
 
-		 } else {
-		   
-		 System.out.println("Take the train to Eclipse town");
-		 }
-		 }String numberOfSiblings = "x";
-		 
-		 int x =input.nextInt();
+		if (birthDay == 1 || birthDay == 2 || birthDay == 3 || birthDay == 4) {
+			birthDay = 56000;
+
+		} else if (birthDay == 5 || birthDay == 6 || birthDay == 7 || birthDay == 8) {
+			birthDay = 8000000;
+		} else if (birthDay == 9 || birthDay == 10 || birthDay == 11 || birthDay == 12) {
+			birthDay = 56;
+		}
+
+		else {
+			birthDay = 0;
+
+		}
+		System.out.println("what is your favorite color");
+
+		String fColor = input.next();
+
+		if (fColor.equalsIgnoreCase("red")) {
+			fColor = "Toyota";
+
+		} else if (fColor.equalsIgnoreCase("orange")) {
+			fColor = "Lexus";
+
+		} else if (fColor.equalsIgnoreCase("Green")) {
+
+			fColor = "Jeeb";
+
+		} else if (fColor.equalsIgnoreCase("Blue")) {
+			fColor = "Messerati";
+		} else if (fColor.equalsIgnoreCase("INDingo")) {
+			fColor = "Ford";
+
+		} else if (fColor.equalsIgnoreCase("violet")) {
+			fColor = "Chevy";
+		} else {
+
+			System.out.println("Please say i need HELP");
+		}
+		{
+
+			if (age % 2 >= 0) {
+
+				System.out.println("how many siblings do you have");
+			}
+
+			else if (age % 2 >= 1) {
+				System.out.println("you dont belong here");
+			}
+		}
+
+		String vacationHome = "numberOfsiblings";
+		int siblings = input.nextInt();
+
+		if (siblings < 0) {
+			vacationHome = "Detroit";
+		} else if (siblings == 1) {
+			vacationHome = "Bora";
+
+		}
+
+		else if (siblings == 2) {
+
+			vacationHome = "Bora";
+		}
+
+		else if (siblings == 3) {
+			vacationHome = "Florida";
+
+		} else if (siblings > 3) {
+			vacationHome = "New York";
+
+		} else {
+
+		}
+		System.out.println(firstName + " " + lastName + " will retire at age of " + " " + age + " " + "with" + " "
+				+ birthDay + " " + "in his  bank acct," + " " + "a vacation home in" + " " + vacationHome + " "
+				+ "and arrive with beautiful " + " " + fColor);
 	}
-
 }

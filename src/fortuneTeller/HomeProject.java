@@ -2,7 +2,7 @@ package fortuneTeller;
 
 import java.util.Scanner;
 
-public class fortuneTellerProject {
+public class HomeProject {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -32,31 +32,27 @@ public class fortuneTellerProject {
 
 		else if (jam.equalsIgnoreCase("Green")) {
 
-			System.out.println("what you doing with you life , have some green");
+			;
 		} else if (jam.equalsIgnoreCase("Blue")) {
-			System.out.println("you need to take a swim");
+
 		} else if (jam.equalsIgnoreCase("INDingo")) {
 
-			System.out.println("what on earth is indino, man your lost");
 		} else if (jam.equalsIgnoreCase("violet")) {
-			System.out.println("violet is your color, finally, you got some sense");
+
 		} else {
 
-			System.out.println("Please say i need HELP");{
-		
-			
-				System.out.println("the colors are : red, orange, green, blue, indigo and voile");
-			
-			}
-		
-			
-		
+			System.out.println("Please say i need HELP");
+		}
+		{
+			String help = input.next();
+			System.out.println("the colors are : red, orange, green, blue, indigo and voile");
 
-			System.out.println("What is your age");
-		
+		}
 
-		
+		int age1 = input.nextInt();
+
+	
+		System.out.println("how sister and brothers do you have?");
 
 	}
-
 }
